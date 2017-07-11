@@ -1,2 +1,2 @@
-zip=https://github.com/lampepfl/dotty/releases/download/untagged-8f8c6cd2f90dcc142bc6/dotty-0.2.0-RC1.zip
-tar=https://github.com/lampepfl/dotty/releases/download/untagged-8f8c6cd2f90dcc142bc6/dotty-0.2.0-RC1.tar.gz
+zip=https://github.com/lampepfl/dotty/releases/download/0.2.0-RC1/dotty-0.2.0-RC1.tar.gz
+tar=https://github.com/lampepfl/dotty/releases/download/0.2.0-RC1/dotty-0.2.0-RC1.zip
