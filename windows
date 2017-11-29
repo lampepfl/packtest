@@ -3,4 +3,5 @@ cd dotty-*
 bin/dotc @../examples/options ../examples/HelloWorld.scala
 bin/dotc ../examples/HelloWorld.scala
 bin/dotr dotty.HelloWorld
+echo ":quit" | bin/dotr
 bin/dotd ../examples/HelloWorld.scala
