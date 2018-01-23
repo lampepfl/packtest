@@ -4,4 +4,4 @@ bin/dotc @../examples/options ../examples/HelloWorld.scala
 bin/dotc ../examples/HelloWorld.scala
 bin/dotr dotty.HelloWorld
 # echo ":quit" | bin/dotr     # disable as it's not supported yet
-bin/dotd ../examples/HelloWorld.scala
+bin/dotd -project Hello ../examples/HelloWorld.scala
