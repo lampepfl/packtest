@@ -13,4 +13,4 @@ script:
   - bin/dotc examples/HelloWorld.scala
   - bin/dotr dotty.HelloWorld
   - echo ":quit" | bin/dotr
-  - bin/dotd examples/HelloWorld.scala
+  - bin/dotd -project Hello examples/HelloWorld.scala
