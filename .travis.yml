@@ -12,5 +12,7 @@ script:
   - bin/dotc @examples/options examples/HelloWorld.scala
   - bin/dotc examples/HelloWorld.scala
   - bin/dotr dotty.HelloWorld
+  - bin/dotr -J-Xmx512m dotty.HelloWorld
   - echo ":quit" | bin/dotr
+  - echo ":quit" | bin/dotr -language:Scala2
   - mkdir -p _site && bin/dotd -siteroot _site -project Hello examples/HelloWorld.scala
