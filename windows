@@ -3,5 +3,7 @@ cd dotty-*
 bin/dotc @../examples/options ../examples/HelloWorld.scala
 bin/dotc ../examples/HelloWorld.scala
 bin/dotr dotty.HelloWorld
-# echo ":quit" | bin/dotr     # disable as it's not supported yet
+bin/dotr -J-Xmx512m dotty.HelloWorld
+# echo ":quit" | bin/dotr                       # disable as it's not supported yet
+# echo ":quit" | bin/dotr -language:Scala2      # same as above
 mkdir -p _site && bin/dotd -siteroot _site -project Hello ../examples/HelloWorld.scala
