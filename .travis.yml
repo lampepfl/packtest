@@ -13,6 +13,6 @@ script:
   - bin/dotc examples/HelloWorld.scala
   - bin/dotr dotty.HelloWorld
   - bin/dotr -J-Xmx512m dotty.HelloWorld
-  - echo ":quit" | bin/dotr
-  - echo ":quit" | bin/dotr -language:Scala2
+  # - echo ":quit" | bin/dotr                      # not usable in test env, jline crash
+  # - echo ":quit" | bin/dotr -language:Scala2     # see above
   - mkdir -p _site && bin/dotd -siteroot _site -project Hello examples/HelloWorld.scala
