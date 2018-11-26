@@ -16,4 +16,5 @@ build_script:
   - cmd: SET PATH=%bash%;%PATH%
 test_script:
   - cmd: bash windows
+  - cmd: CALL windows.bat
 
