@@ -1,4 +1,4 @@
-# PackTest
+# PackTest [![Build Status](https://travis-ci.org/lampepfl/packtest.svg?branch=master)](https://travis-ci.org/lampepfl/packtest)
 
 Test dotty release on Linux, Mac and Windows
 
