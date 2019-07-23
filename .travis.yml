@@ -5,7 +5,7 @@ matrix:
       language: java
     - os: linux
       language: scala
-      jdk: oraclejdk8
+      jdk: openjdk8
 script:
   - source artifacts && wget -O dotty.tar.gz $tar
   - tar -xzvf dotty.tar.gz --strip-components=1
