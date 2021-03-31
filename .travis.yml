@@ -7,12 +7,12 @@ matrix:
       language: scala
       jdk: openjdk8
 script:
-  - source artifacts && wget -O dotty.tar.gz $tar
-  - tar -xzvf dotty.tar.gz --strip-components=1
-  - bin/dotc @examples/options examples/HelloWorld.scala
-  - bin/dotc examples/HelloWorld.scala
-  - bin/dotr dotty.HelloWorld
-  - bin/dotr -J-Xmx512m dotty.HelloWorld
+  - source artifacts && wget -O scala3.tar.gz $tar
+  - tar -xzvf scala3.tar.gz --strip-components=1
+  - bin/scalac @examples/options examples/HelloWorld.scala
+  - bin/scalac examples/HelloWorld.scala
+  - bin/scala dotty.HelloWorld
+  - bin/scala -J-Xmx512m dotty.HelloWorld
   # - echo ":quit" | bin/dotr                      # not usable in test env, jline crash
   # - echo ":quit" | bin/dotr -language:Scala2     # see above
-  - mkdir -p _site && bin/dotd -siteroot _site -project Hello examples/HelloWorld.scala
+  - mkdir -p _site && bin/scaladoc -siteroot _site -project Hello examples/HelloWorld.scala
