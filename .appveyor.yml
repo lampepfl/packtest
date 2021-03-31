@@ -11,8 +11,8 @@ matrix:
 init:
   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 build_script:
-  - ps: $url = get-content artifacts | select-string "zip" | Foreach {($_ -split  '=', 2)[1]};  wget -O dotty.zip $url
-  - ps: Expand-Archive dotty.zip -DestinationPath .
+  - ps: $url = get-content artifacts | select-string "zip" | Foreach {($_ -split  '=', 2)[1]};  wget -O scala3.zip $url
+  - ps: Expand-Archive scala3.zip -DestinationPath .
   - cmd: SET PATH=%bash%;%PATH%
 test_script:
   - cmd: bash windows

@@ -1,9 +1,9 @@
 set -e
-cd dotty-*
-bin/dotc @../examples/options ../examples/HelloWorld.scala
-bin/dotc ../examples/HelloWorld.scala
-bin/dotr dotty.HelloWorld
-bin/dotr -J-Xmx512m dotty.HelloWorld
-# echo ":quit" | bin/dotr                       # disable as it's not supported yet
-# echo ":quit" | bin/dotr -language:Scala2      # same as above
-mkdir -p _site && bin/dotd -siteroot _site -project Hello ../examples/HelloWorld.scala
+cd scala3-*
+bin/scalac @../examples/options ../examples/HelloWorld.scala
+bin/scalac ../examples/HelloWorld.scala
+bin/scala dotty.HelloWorld
+bin/scala -J-Xmx512m dotty.HelloWorld
+# echo ":quit" | bin/scala                       # disable as it's not supported yet
+# echo ":quit" | bin/scala -language:Scala2      # same as above
+mkdir -p _site && bin/scaladoc -siteroot _site -project Hello ../examples/HelloWorld.scala
